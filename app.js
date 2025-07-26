@@ -146,25 +146,18 @@ function setupQuiz() {
 }
 
 function showAnswer(questionNumber) {
-    console.log('showAnswer called with:', questionNumber); // Debug log
-    
     const answer = document.getElementById('answer' + questionNumber);
     const button = answer ? answer.previousElementSibling : null;
-    
-    console.log('Answer element:', answer); // Debug log
-    console.log('Button element:', button); // Debug log
     
     if (answer && button) {
         if (answer.classList.contains('show')) {
             // Hide answer
             answer.classList.remove('show');
             button.textContent = '答えを見る';
-            console.log('Answer hidden'); // Debug log
         } else {
             // Show answer
             answer.classList.add('show');
             button.textContent = '答えを隠す';
-            console.log('Answer shown'); // Debug log
             
             // Add a little celebration effect
             answer.style.transform = 'scale(1.02)';
