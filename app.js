@@ -362,19 +362,21 @@ document.addEventListener('keydown', function(event) {
         const activeTab = document.querySelector('.tab-btn.active');
         if (activeTab) {
             const tabContainer = activeTab.closest('.tabs, .kids-tabs');
-            const tabs = Array.from(tabContainer.children);
-            const currentIndex = tabs.indexOf(activeTab);
-            let nextIndex;
-            
-            if (event.key === 'ArrowRight') {
-                nextIndex = (currentIndex + 1) % tabs.length;
-            } else {
-                nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            if (tabContainer) {
+                const tabs = Array.from(tabContainer.children);
+                const currentIndex = tabs.indexOf(activeTab);
+                let nextIndex;
+
+                if (event.key === 'ArrowRight') {
+                    nextIndex = (currentIndex + 1) % tabs.length;
+                } else {
+                    nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+                }
+
+                tabs[nextIndex].click();
+                tabs[nextIndex].focus();
+                event.preventDefault();
             }
-            
-            tabs[nextIndex].click();
-            tabs[nextIndex].focus();
-            event.preventDefault();
         }
     }
 });
@@ -402,15 +404,17 @@ document.addEventListener('touchend', function(event) {
         const activeTab = document.querySelector('.tab-btn.active');
         if (activeTab) {
             const tabContainer = activeTab.closest('.tabs, .kids-tabs');
-            const tabs = Array.from(tabContainer.children);
-            const currentIndex = tabs.indexOf(activeTab);
-            
-            if (deltaX > 0 && currentIndex > 0) {
-                // Swipe right - previous tab
-                tabs[currentIndex - 1].click();
-            } else if (deltaX < 0 && currentIndex < tabs.length - 1) {
-                // Swipe left - next tab
-                tabs[currentIndex + 1].click();
+            if (tabContainer) {
+                const tabs = Array.from(tabContainer.children);
+                const currentIndex = tabs.indexOf(activeTab);
+
+                if (deltaX > 0 && currentIndex > 0) {
+                    // Swipe right - previous tab
+                    tabs[currentIndex - 1].click();
+                } else if (deltaX < 0 && currentIndex < tabs.length - 1) {
+                    // Swipe left - next tab
+                    tabs[currentIndex + 1].click();
+                }
             }
         }
     }
