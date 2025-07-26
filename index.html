@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓼科東急ホテル家族旅行 - webしおり</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- メインタイトル画面 -->
+    <div id="top-page" class="page active">
+        <div class="forest-background">
+            <div class="container">
+                <div class="title-section">
+                    <div class="forest-icon">🌲</div>
+                    <h1 class="main-title">蓼科東急ホテル<br>家族旅行</h1>
+                    <p class="trip-dates">2025年8月5日（火）～8月7日（木）</p>
+                    <p class="trip-subtitle">夏の森で過ごす2泊3日</p>
+                </div>
+                
+                <div class="choice-buttons">
+                    <button class="btn btn--primary choice-btn" id="adult-btn">
+                        <span class="btn-icon">📋</span>
+                        <span class="btn-text">大人向けしおり</span>
+                        <span class="btn-desc">詳細な情報・スケジュール</span>
+                    </button>
+                    
+                    <button class="btn btn--secondary choice-btn" id="kids-btn">
+                        <span class="btn-icon">🐻</span>
+                        <span class="btn-text">子ども向けしおり</span>
+                        <span class="btn-desc">楽しい冒険ガイド</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 大人向けしおり -->
+    <div id="adult-page" class="page">
+        <div class="container">
+            <header class="page-header">
+                <button class="back-btn" id="back-from-adult">← トップへ戻る</button>
+                <h2>大人向けしおり</h2>
+                <button class="switch-btn" id="to-kids">子ども向けに切り替え</button>
+            </header>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="schedule">スケジュール</button>
+                <button class="tab-btn" data-tab="contacts">連絡先</button>
+                <button class="tab-btn" data-tab="packing">持ち物</button>
+                <button class="tab-btn" data-tab="budget">費用</button>
+                <button class="tab-btn" data-tab="weather">天候対策</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- スケジュールタブ -->
+                <div id="schedule" class="tab-panel active">
+                    <div class="day-schedule">
+                        <h3>1日目（8月5日・火）到着日</h3>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <span class="time">10:16</span>
+                                <div class="activity">
+                                    <strong>東京駅発（あずさ11号）</strong>
+                                    <p>新幹線で出発</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">12:30</span>
+                                <div class="activity">
+                                    <strong>茅野駅到着 → シャトルバス乗車</strong>
+                                    <p>無料シャトルバス利用</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">13:15</span>
+                                <div class="activity">
+                                    <strong>ホテル到着・チェックイン</strong>
+                                    <p>いよいよ蓼科に到着！</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">14:00-16:00</span>
+                                <div class="activity">
+                                    <strong>室内温水プール</strong>
+                                    <p>15mコース＋子供用プール、スイミングキャップ持参推奨</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">16:30-17:30</span>
+                                <div class="activity">
+                                    <strong>森のあそびば（木育キッズスペース）</strong>
+                                    <p>ひのき積み木・木製迷路</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">18:00-19:30</span>
+                                <div class="activity">
+                                    <strong>グラマラスダイニングBBQ</strong>
+                                    <p>信州産ジンギスカンセット</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">20:00-21:00</span>
+                                <div class="activity">
+                                    <strong>東急ハーヴェストクラブ「はじめてのスターウォッチング」</strong>
+                                    <p>家族全員参加可能、温かい飲み物付き</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day-schedule">
+                        <h3>2日目（8月6日・水）メインアクティビティ日</h3>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <span class="time">9:00-11:00</span>
+                                <div class="activity">
+                                    <strong>フィッシングエリア</strong>
+                                    <p>釣竿レンタル1,500円/本、釣れたニジマスは塩焼き調理500円/匹</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">11:30-12:30</span>
+                                <div class="activity">
+                                    <strong>蓼科湖散策</strong>
+                                    <p>釣り場から徒歩10分</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">13:30-15:00</span>
+                                <div class="activity">
+                                    <strong>TENOHAクラフトワークショップ</strong>
+                                    <p>石鹸作り/ソーラーカー/万華鏡から選択</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">15:30-17:00</span>
+                                <div class="activity">
+                                    <strong>ガーデンプール</strong>
+                                    <p>ひょうたん型プール、幼児用浅瀬、バスタオル無料貸出</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">18:30-20:00</span>
+                                <div class="activity">
+                                    <strong>レストラン フレグラント</strong>
+                                    <p>信州牛しゃぶしゃぶコース</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">20:00-21:00</span>
+                                <div class="activity">
+                                    <strong>鹿山の湯</strong>
+                                    <p>家族風呂貸切可能</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day-schedule">
+                        <h3>3日目（8月7日・木）帰宅日</h3>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <span class="time">9:00-11:30</span>
+                                <div class="activity">
+                                    <strong>蓼科高原芸術の森彫刻公園</strong>
+                                    <p>入場無料、約70点の彫刻作品、のらざあ利用可能</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">12:00-12:30</span>
+                                <div class="activity">
+                                    <strong>森のあそびば（最後の遊び時間）</strong>
+                                    <p>チェックアウト後の荷物預かり利用</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">12:30</span>
+                                <div class="activity">
+                                    <strong>チェックアウト</strong>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">14:00</span>
+                                <div class="activity">
+                                    <strong>シャトルバス出発</strong>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">15:30</span>
+                                <div class="activity">
+                                    <strong>茅野駅着 → あずさ18号乗車</strong>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">17:30</span>
+                                <div class="activity">
+                                    <strong>新宿駅到着</strong>
+                                    <p>お疲れさまでした！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 連絡先タブ -->
+                <div id="contacts" class="tab-panel">
+                    <div class="contact-section">
+                        <h3>宿泊施設</h3>
+                        <div class="contact-item">
+                            <strong>蓼科東急ホテル</strong>
+                            <p>📞 0266-69-3109</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>東急ハーヴェストクラブ蓼科</strong>
+                            <p>📞 0266-60-2101</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-section emergency">
+                        <h3>緊急連絡先</h3>
+                        <div class="contact-item">
+                            <strong>警察</strong>
+                            <p>📞 110</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>救急・消防</strong>
+                            <p>📞 119</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>諏訪中央病院</strong>
+                            <p>📞 0266-72-1000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 持ち物タブ -->
+                <div id="packing" class="tab-panel">
+                    <div class="packing-section">
+                        <h3>大人用</h3>
+                        <ul class="packing-list">
+                            <li>着替え</li>
+                            <li>水着</li>
+                            <li>タオル</li>
+                            <li>スイミングキャップ</li>
+                            <li>日焼け止め</li>
+                            <li>虫除けスプレー</li>
+                            <li>常備薬</li>
+                            <li>カメラ</li>
+                            <li>充電器</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="packing-section">
+                        <h3>子ども用</h3>
+                        <ul class="packing-list">
+                            <li>着替え多め</li>
+                            <li>水着</li>
+                            <li>タオル</li>
+                            <li>帽子</li>
+                            <li>お気に入りのおもちゃ</li>
+                            <li>絵本</li>
+                            <li>お菓子</li>
+                            <li>飲み物</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 費用タブ -->
+                <div id="budget" class="tab-panel">
+                    <div class="budget-item">
+                        <span>交通費</span>
+                        <span>68,400円</span>
+                    </div>
+                    <div class="budget-item">
+                        <span>フィッシング</span>
+                        <span>8,500円</span>
+                    </div>
+                    <div class="budget-item">
+                        <span>クラフト体験</span>
+                        <span>12,000円</span>
+                    </div>
+                    <div class="budget-item">
+                        <span>BBQ</span>
+                        <span>24,000円</span>
+                    </div>
+                    <div class="budget-item">
+                        <span>スターウォッチング</span>
+                        <span>2,000円</span>
+                    </div>
+                    <div class="budget-item">
+                        <span>その他食事</span>
+                        <span>35,000円</span>
+                    </div>
+                    <div class="budget-item total">
+                        <span><strong>合計</strong></span>
+                        <span><strong>149,900円</strong></span>
+                    </div>
+                </div>
+
+                <!-- 天候対策タブ -->
+                <div id="weather" class="tab-panel">
+                    <div class="weather-section">
+                        <h3>雨の日のプラン</h3>
+                        <ul>
+                            <li>室内温水プール</li>
+                            <li>森のあそびば</li>
+                            <li>クラフトワークショップ</li>
+                            <li>ホテル内ゲームコーナー</li>
+                            <li>温泉</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="weather-section">
+                        <h3>暑い日のプラン</h3>
+                        <ul>
+                            <li>早朝散歩</li>
+                            <li>室内プール</li>
+                            <li>涼しい室内アクティビティ</li>
+                            <li>アイスクリーム休憩</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 子ども向けしおり -->
+    <div id="kids-page" class="page">
+        <div class="container">
+            <header class="page-header kids-header">
+                <button class="back-btn" id="back-from-kids">← トップへ戻る</button>
+                <h2>🐻 きみの森の冒険ガイド 🌲</h2>
+                <button class="switch-btn" id="to-adult">大人向けに切り替え</button>
+            </header>
+
+            <div class="kids-tabs">
+                <button class="tab-btn active" data-tab="kids-schedule">ぼうけんスケジュール</button>
+                <button class="tab-btn" data-tab="fun-facts">森のひみつ</button>
+                <button class="tab-btn" data-tab="quiz">きみは知ってる？</button>
+            </div>
+
+            <div class="tab-content kids-content">
+                <!-- 子ども向けスケジュール -->
+                <div id="kids-schedule" class="tab-panel active">
+                    <div class="kids-day-schedule">
+                        <h3>🚄 1日目：森への旅立ち！</h3>
+                        <div class="kids-schedule-items">
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">10:16</span>
+                                <div class="kids-activity">
+                                    <strong>🚄 電車でしゅっぱーつ！</strong>
+                                    <p>あずさ号で長野に向かうよ！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">13:15</span>
+                                <div class="kids-activity">
+                                    <strong>🏨 森のホテルとうちゃく！</strong>
+                                    <p>ついに蓼科の森に来たよ！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">14:00</span>
+                                <div class="kids-activity">
+                                    <strong>🏊‍♂️ あったかプールで泳ごう</strong>
+                                    <p>室内だから雨でも大丈夫だよ！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">16:30</span>
+                                <div class="kids-activity">
+                                    <strong>🌲 木のおもちゃで遊ぼう</strong>
+                                    <p>ひのきの積み木と迷路があるよ！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">18:00</span>
+                                <div class="kids-activity">
+                                    <strong>🍖 外でバーベキュー</strong>
+                                    <p>信州のお肉を焼いて食べるよ！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item highlight">
+                                <span class="kids-time">20:00</span>
+                                <div class="kids-activity">
+                                    <strong>⭐ 星を見よう！</strong>
+                                    <p>夏の大三角形を探してみよう！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kids-day-schedule">
+                        <h3>🎣 2日目：森で大冒険！</h3>
+                        <div class="kids-schedule-items">
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">9:00</span>
+                                <div class="kids-activity">
+                                    <strong>🐟 お魚つりに挑戦！</strong>
+                                    <p>にじいろに光るニジマスを釣ろう！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">11:30</span>
+                                <div class="kids-activity">
+                                    <strong>🚶‍♂️ 湖のまわりをお散歩</strong>
+                                    <p>きれいな蓼科湖を歩こう！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">13:30</span>
+                                <div class="kids-activity">
+                                    <strong>🛠️ 工作教室</strong>
+                                    <p>石鹸・車・万華鏡、何を作る？</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">15:30</span>
+                                <div class="kids-activity">
+                                    <strong>🏊‍♂️ 外のプールで泳ごう</strong>
+                                    <p>ひょうたんの形の面白いプールだよ！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">18:30</span>
+                                <div class="kids-activity">
+                                    <strong>🥩 信州牛のしゃぶしゃぶ</strong>
+                                    <p>長野の美味しいお肉を食べよう！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">20:00</span>
+                                <div class="kids-activity">
+                                    <strong>♨️ 温泉に入ろう</strong>
+                                    <p>家族みんなで温泉タイム！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kids-day-schedule">
+                        <h3>🎨 3日目：最後の冒険</h3>
+                        <div class="kids-schedule-items">
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">9:00</span>
+                                <div class="kids-activity">
+                                    <strong>🗿 彫刻の森を探検</strong>
+                                    <p>70個もある不思議な彫刻を見よう！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">12:00</span>
+                                <div class="kids-activity">
+                                    <strong>🌲 最後の森遊び</strong>
+                                    <p>木のおもちゃでもう一度遊ぼう！</p>
+                                </div>
+                            </div>
+                            <div class="kids-schedule-item">
+                                <span class="kids-time">17:30</span>
+                                <div class="kids-activity">
+                                    <strong>🏠 おうちに帰ろう</strong>
+                                    <p>楽しい森の冒険おしまい！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 森のひみつ -->
+                <div id="fun-facts" class="tab-panel">
+                    <div class="fun-fact-card">
+                        <h3>🌲 森のふしぎ</h3>
+                        <ul class="fun-facts-list">
+                            <li>🌿 森の木は酸素を作ってくれるよ</li>
+                            <li>🌲 ひのきの香りにはリラックス効果があるんだ</li>
+                            <li>🐿️ 森には色々な動物が住んでいるよ</li>
+                        </ul>
+                    </div>
+
+                    <div class="fun-fact-card">
+                        <h3>⭐ 星のひみつ</h3>
+                        <ul class="fun-facts-list">
+                            <li>✨ 夏の大三角形は、ベガ・アルタイル・デネブの3つの星だよ</li>
+                            <li>🌌 天の川は夏の夜空で一番よく見えるよ</li>
+                            <li>💫 流れ星は宇宙のちりが燃えている光なんだ</li>
+                        </ul>
+                    </div>
+
+                    <div class="fun-fact-card">
+                        <h3>🐟 お魚のひみつ</h3>
+                        <ul class="fun-facts-list">
+                            <li>🌈 ニジマスは虹色に光って見えるからその名前がついたよ</li>
+                            <li>💨 魚は水の中で呼吸してるんだ</li>
+                            <li>🎣 釣りには忍耐力が大切だよ</li>
+                        </ul>
+                    </div>
+
+                    <div class="fun-fact-card">
+                        <h3>🏔️ 長野県のひみつ</h3>
+                        <ul class="fun-facts-list">
+                            <li>📏 長野県は日本で4番目に大きな県だよ！</li>
+                            <li>⛰️ 蓼科山は標高2,531mの高い山だよ</li>
+                            <li>🐒 長野県には野生のニホンザルがいるんだ！</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- クイズ -->
+                <div id="quiz" class="tab-panel">
+                    <div class="quiz-section">
+                        <h3>🤔 きみは知ってる？クイズ</h3>
+                        
+                        <div class="quiz-card">
+                            <h4>Q1: ニジマスはなぜ「ニジマス」という名前なの？</h4>
+                            <button class="quiz-btn" onclick="showAnswer(1)">答えを見る</button>
+                            <div class="quiz-answer" id="answer1">
+                                <p>🌈 答え：虹色に光って見えるからだよ！</p>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card">
+                            <h4>Q2: 夏の大三角形を作る3つの星の名前は？</h4>
+                            <button class="quiz-btn" onclick="showAnswer(2)">答えを見る</button>
+                            <div class="quiz-answer" id="answer2">
+                                <p>⭐ 答え：ベガ・アルタイル・デネブだよ！</p>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card">
+                            <h4>Q3: 蓼科山の高さはどのくらい？</h4>
+                            <button class="quiz-btn" onclick="showAnswer(3)">答えを見る</button>
+                            <div class="quiz-answer" id="answer3">
+                                <p>⛰️ 答え：2,531メートルの高い山だよ！</p>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card">
+                            <h4>Q4: 森の木は何を作ってくれるの？</h4>
+                            <button class="quiz-btn" onclick="showAnswer(4)">答えを見る</button>
+                            <div class="quiz-answer" id="answer4">
+                                <p>🌿 答え：酸素を作ってくれるよ！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
