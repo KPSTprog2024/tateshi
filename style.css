@@ -794,6 +794,36 @@ select.form-control {
   opacity: 0.8;
 }
 
+/* Adjust layout for smaller screens to prevent content overlap */
+@media (max-width: 480px), (max-height: 700px) {
+  .forest-icon {
+    font-size: 3rem;
+  }
+  .main-title {
+    font-size: var(--font-size-3xl);
+  }
+  .trip-dates {
+    font-size: var(--font-size-lg);
+  }
+  .trip-subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-20);
+  }
+  .choice-btn {
+    padding: var(--space-16);
+    min-height: 100px;
+  }
+  .btn-icon {
+    font-size: 1.5rem;
+  }
+  .btn-text {
+    font-size: var(--font-size-lg);
+  }
+  .btn-desc {
+    font-size: var(--font-size-xs);
+  }
+}
+
 /* Page headers */
 .page-header {
   display: flex;
